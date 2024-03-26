@@ -1,0 +1,256 @@
+/* Define global styling for the entire document */
+body {
+    font-family: Arial, sans-serif; /* Set font family for better readability */
+    background-color: #f4f4f4; /* Define background color */
+}
+
+/* Styling for the main container */
+.container {
+    max-width: 800px; /* Set maximum width */
+    margin: 50px auto; /* Center the container horizontally with margin */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #fff; /* Set background color */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+/* Styling for header section */
+header {
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add spacing at the bottom */
+}
+
+/* Styling for flex container */
+.flex-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items evenly with space between them */
+    margin-bottom: 20px; /* Add spacing at the bottom */
+}
+
+/* Styling for left side of flex container */
+.left {
+    flex: 1; /* Take up equal space */
+}
+
+/* Styling for right side of flex container */
+.right {
+    flex: 1; /* Take up equal space */
+    text-align: center; /* Center-align the text */
+}
+
+/* Styling for labels */
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add spacing at the bottom */
+    font-weight: bold; /* Make labels bold */
+}
+
+/* Styling for input fields, select elements, and checkboxes */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="file"],
+input[type="checkbox"],
+select {
+    width: calc(100% - 24px); /* Calculate width to accommodate border */
+    padding: 8px; /* Add padding */
+    margin-top: 5px; /* Add spacing at the top */
+    margin-bottom: 10px; /* Add spacing at the bottom */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border: 1px solid #ccc; /* Add border to all input elements */
+    border-radius: 4px; /* Add border radius to all input elements */
+}
+
+/* Align checkboxes vertically with text */
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+/* Style labels for checkboxes */
+label[for] {
+    display: inline-block; /* Display labels as inline-block elements */
+    margin-bottom: 5px; /* Add spacing at the bottom */
+}
+
+/* Styling for skills container */
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Styling for individual skills */
+.skill {
+    margin-right: 20px; /* Add spacing between skills */
+}
+
+/* Hide checkboxes */
+.skill input[type="checkbox"] {
+    display: none;
+}
+
+/* Styling for labels associated with checked checkboxes */
+.skill input[type="checkbox"] + label {
+    display: inline-block; /* Display labels as inline-block elements */
+    background-color: #f0f0f0; /* Set background color */
+    padding: 8px 12px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styling for checked checkboxes */
+.skill input[type="checkbox"]:checked + label {
+    background-color: #007bff; /* Change background color */
+    color: #fff; /* Change text color */
+}
+
+/* Additional styling for select elements */
+select {
+    width: 100%; /* Make select elements fill the entire width */
+}
+
+/* Styling for buttons */
+button[type="submit"] {
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 100%; /* Make buttons fill the entire width */
+}
+
+/* Hover effect for buttons */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Styling for preview content */
+.preview-content {
+    border: 1px solid #ccc; /* Add border */
+    padding: 20px; /* Add padding */
+    margin-left: 20px; /* Add spacing from the left */
+}
+
+/* Styling for horizontal lines within preview content */
+.preview-content hr {
+    margin: 10px 0; /* Add spacing above and below the horizontal lines */
+    border: none; /* Remove default border */
+    border-top: 1px solid #ccc; /* Add top border */
+}
+
+/* Styling for personal information container */
+.personal-info-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items evenly with space between them */
+    align-items: flex-start; /* Align items to the top */
+    margin-left: 20px; /* Add spacing from the left */
+    margin-right: -20px; /* Compensate for the negative margin */
+}
+
+/* Styling for personal information section */
+.personal-info {
+    flex: 2; /* Take up more space */
+    margin-right: 20px; /* Add spacing from the right */
+}
+
+/* Styling for other sections */
+.other-sections {
+    flex: 2; /* Take up more space */
+    margin-top: 20px; /* Add spacing from the top */
+    margin-left: 20px; /* Add spacing from the left */
+}
+
+/* Styling for paragraphs within personal information and other sections */
+.personal-info p,
+.other-sections p {
+    word-wrap: break-word; /* Wrap long words to next line */
+}
+
+/* Styling for image preview container */
+.image-preview-container {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 160px; /* Position from the top */
+    left: 900px; /* Position from the left */
+    flex: 1; /* Take up equal space */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align image to the right */
+    align-items: flex-start; /* Align image to the top */
+}
+
+/* Styling for uploaded image preview */
+.image-preview {
+    max-width: 100px; /* Set maximum width */
+}
+
+/* Styling for image within uploaded image preview */
+.image-preview img {
+    max-width: 100px; /* Set maximum width */
+    max-height: 100px; /* Set maximum height */
+    border-radius: 50%; /* Make the image round */
+    border: 2px solid #ccc; /* Add border */
+}
+
+/* Additional styling for other sections */
+.other-sections {
+    flex: 2; /* Take up more space */
+    margin-top: 20px; /* Add spacing from the top */
+    margin-left: 20px; /* Add spacing from the left */
+}
+
+
+.preview button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    display:block;
+    margin: 0 auto;
+}
+
+.preview button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add media queries for responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .image-preview-container {
+        position: relative; /* Change position to relative */
+        top: auto;
+        left: auto;
+        margin-top: 20px; /* Adjust margin to create space between image and other content */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .personal-info-container,
+    .other-sections {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: stretch; /* Stretch items to full width */
+    }
+    .image-preview-container {
+        order: -1; /* Move image container to the top for better visibility */
+        align-self: center; /* Center align the image container */
+    }
+    .personal-info,
+    .other-sections {
+        margin-right: 0; /* Remove right margin for better spacing */
+    }
+}
+
+/* Adjustments for the uploaded image */
+.image-preview {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-top: 10px; /* Adjust margin to create space between image and other content */
+}
